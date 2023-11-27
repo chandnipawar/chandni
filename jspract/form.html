@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <center>
+    <form action="">
+        <span>First name</span>
+        <input type="text" id="ac" onfocus="hy()" required><br><br>
+
+        <span>Last name</span>
+        <input type="text" id="ac1" onfocus="hy1()" required><br><br>
+
+        <span>Password</span>
+        <input type="password" id="ac2" onfocus="hy2()" required><br><br>
+
+        <span>Email</span>
+        <input type="email" id="ac3" onfocus="hy3()" required><br><br>
+
+        <button onclick="alert('form submitted')" type="submit">SUBMIT</button>
+    </form>
+    </center>
+
+<script>
+    function hy(){
+        document.getElementById('ac').style.cssText='height:50px;background:yellow;border-radius:20px;border:3px solid maroon';
+    }
+    function hy1(){
+        document.getElementById('ac1').style.cssText='height:50px;background:blue;border-radius:20px;border:3px solid green';
+    }
+    function hy2(){
+        document.getElementById('ac2').style.cssText='height:50px;background:green;border-radius:20px;border:3px solid yellow';
+    }
+    function hy3(){
+        document.getElementById('ac3').style.cssText='height:50px;background:red;border-radius:20px;border:3px solid yellow';
+    }
+</script>
+</body>
+</html>
